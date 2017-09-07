@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fernandez.fernandezquiz1.FourthActivity">
+
+    <TextView
+        android:id="@+id/CSHeader"
+        android:text="BACHELOR OF SCIENCE IN INFORMATION SYSTEMS
+        (4 years)"
+        android:textSize="28px"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFD700"/>
+
+    <TextView
+        android:id="@+id/CSCredentials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level I accredited by the Philippine Accrediting Association of Schools, Colleges, and Universities"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/CSHeader"
+        android:layout_alignLeft="@+id/btnHome"
+        android:layout_alignStart="@+id/btnHome" />
+
+    <TextView
+        android:id="@+id/CSDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Students under the BS Information Systems program are trained to handle the managerial side of computer related activities. The focus of the program is effective management of resources – people, money, and computer facilities, especially in areas involving accounting, projections/estimates/feasibility studies, and the like."
+        android:layout_below="@+id/CSCredentials"
+        android:layout_alignLeft="@+id/CSCredentials"
+        android:layout_alignStart="@+id/CSCredentials"
+        android:layout_marginTop="45px"
+        android:layout_alignRight="@+id/CSHeader"
+        android:layout_alignEnd="@+id/CSHeader" />
+
+    <Button
+        android:id="@+id/btnHome"
+        android:text="Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50px"
+        android:onClick="callMainActivity"
+        android:layout_marginBottom="100px"
+        />
+
+    <Button
+        android:id="@+id/btnCSProgram"
+        android:text="CS Program"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btnHome"
+        android:onClick="callSecondActivity"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="100px"
+        android:textColor="#29299c"
+        />
+
+    <Button
+        android:id="@+id/btnITProgram"
+        android:text="IT Program"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btnCSProgram"
+        android:onClick="callThirdActivity"
+        android:layout_marginBottom="100px"
+        android:textColor="#3da13d"
+        />
+</RelativeLayout>

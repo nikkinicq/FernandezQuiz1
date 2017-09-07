@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fernandez.fernandezquiz1.SecondActivity">
+
+    <TextView
+        android:id="@+id/CSHeader"
+        android:text="BACHELOR OF SCIENCE IN COMPUTER SCIENCE
+        (4 years)"
+        android:textSize="28px"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFD700"/>
+
+    <TextView
+        android:id="@+id/CSCredentials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level I accredited by the Philippine Accrediting Association of Schools, Colleges, and Universities"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/CSHeader"
+        android:layout_alignLeft="@+id/btnHome"
+        android:layout_alignStart="@+id/btnHome" />
+    <TextView
+        android:id="@+id/CSDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Students under the BS Computer Science program are highly trained for software and system development. The program’s main focus is to expose the students to different approaches and styles in developing programs whether they are procedural or the object oriented type of system approach."
+        android:layout_below="@+id/CSCredentials"
+        android:layout_alignLeft="@+id/CSCredentials"
+        android:layout_alignStart="@+id/CSCredentials"
+        android:layout_marginTop="45px"
+        android:layout_alignRight="@+id/CSHeader"
+        android:layout_alignEnd="@+id/CSHeader" />
+
+    <Button
+        android:id="@+id/btnHome"
+        android:text="Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="callMainActivity"
+        android:layout_marginBottom="100px"
+        android:layout_marginLeft="75px"
+         />
+
+    <Button
+        android:id="@+id/btnITProgram"
+        android:text="IT Program"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btnHome"
+        android:onClick="callThirdActivity"
+        android:layout_marginBottom="100px"
+        android:textColor="#3da13d"
+        />
+
+    <Button
+        android:id="@+id/btnISProgram"
+        android:text="IS Program"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btnITProgram"
+        android:onClick="callFourthActivity"
+        android:layout_marginBottom="100px"
+        android:textColor="#FFA500"
+        />
+</RelativeLayout>

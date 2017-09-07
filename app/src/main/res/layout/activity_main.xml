@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fernandez.fernandezquiz1.MainActivity">
+
+    <Button
+        android:id="@+id/btnCS"
+        android:text="B.S. COMPUTRE SCIENCE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnIT"
+        android:layout_marginLeft="145px"
+        android:paddingLeft="77px"
+        android:paddingRight="77px"
+        android:layout_centerInParent="true"
+        android:onClick="callSecondActivity"
+        android:textColor="#29299c"
+        />
+
+    <Button
+        android:id="@+id/btnIT"
+        android:text="B.S. INFORMATION TECHNOLOGY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="callThirdActivity"
+        android:textColor="#3da13d"
+        />
+
+    <Button
+        android:id="@+id/btnIS"
+        android:text="B.S. INFORMATION SYSTEMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnIT"
+        android:layout_marginLeft="145px"
+        android:paddingLeft="54px"
+        android:paddingRight="53px"
+        android:onClick="callFourthActivity"
+        android:layout_centerInParent="true"
+        android:textColor="#FFA500"
+        />
+
+</RelativeLayout>
