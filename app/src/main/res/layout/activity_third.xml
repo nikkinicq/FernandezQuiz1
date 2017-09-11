@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fdfd96"            
     tools:context="com.fernandez.fernandezquiz1.ThirdActivity">
 
     <TextView
@@ -17,7 +18,7 @@
         android:layout_marginTop="72dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textColor="#FFD700"/>
+        />
 
     <TextView
         android:id="@+id/CSCredentials"
@@ -53,7 +54,7 @@
 
     <Button
         android:id="@+id/btnCSProgram"
-        android:text="IT Program"
+        android:text="CS Program"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
