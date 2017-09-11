@@ -25,13 +25,16 @@ public class FourthActivity extends AppCompatActivity {
 
     public void callMainActivity (View view) {
         Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
     public void callSecondActivity (View view) {
         Intent intent = new Intent(this, SecondActivity.class);
+        startActivity(intent);
     }
 
     public void callThirdActivity (View view) {
         Intent intent = new Intent(this, ThirdActivity.class);
+        startActivity(intent);
     }
 }
