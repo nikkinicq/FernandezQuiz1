@@ -24,6 +24,7 @@ public class SecondActivity extends AppCompatActivity {
 
     public void callMainActivity (View view) {
         Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
     public void callThirdActivity (View view) {
