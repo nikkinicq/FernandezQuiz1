@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fdfd96"
     tools:context="com.fernandez.fernandezquiz1.FourthActivity">
 
     <TextView
@@ -17,7 +18,7 @@
         android:layout_marginTop="72dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textColor="#FFD700"/>
+        />
 
     <TextView
         android:id="@+id/CSCredentials"
@@ -27,7 +28,9 @@
         android:layout_marginTop="22dp"
         android:layout_below="@+id/CSHeader"
         android:layout_alignLeft="@+id/btnHome"
-        android:layout_alignStart="@+id/btnHome" />
+        android:layout_alignStart="@+id/btnHome"
+        android:layout_alignRight="@+id/btnITProgram"
+        android:layout_alignEnd="@+id/btnITProgram" />
 
     <TextView
         android:id="@+id/CSDesc"
@@ -46,11 +49,13 @@
         android:text="Home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="50px"
+        android:layout_marginLeft="18dp"
         android:onClick="callMainActivity"
-        android:layout_marginBottom="100px"
-        />
+        android:layout_marginStart="18dp"
+        android:layout_alignBaseline="@+id/btnCSProgram"
+        android:layout_alignBottom="@+id/btnCSProgram"
+        android:layout_alignLeft="@+id/CSHeader"
+        android:layout_alignStart="@+id/CSHeader" />
 
     <Button
         android:id="@+id/btnCSProgram"
@@ -76,4 +81,5 @@
         android:layout_marginBottom="100px"
         android:textColor="#3da13d"
         />
+
 </RelativeLayout>
